@@ -1,0 +1,26 @@
+// File "launch.json"
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Flask",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": false,            
+            "program": "${workspaceRoot}/main.py",
+            "env": {
+                "FLASK_APP": "${workspaceRoot}/main.py"
+            },
+            "args": [
+                "run"
+            ],
+            "envFile": "${workspaceFolder}/.env",
+
+        }
+    ]
+}
+
+# app.py file
+app.run(port=5000)
+# Don't use debug=True, because it disables the Visual Studio Code debugger
+# app.run(port=5000, debug=True) - disables the Visual Studio Code debugger
