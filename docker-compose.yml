@@ -1,0 +1,27 @@
+services:
+  backend:
+    build: ./backend
+    container_name: backend
+    ports:
+      - '5000:5000'  # Flask default port
+    volumes:
+      - ./backend:/app  # Sync code between local and container
+    working_dir: /app  # Set the working directory to /app inside the container
+    environment:
+      - FLASK_ENV=development  # Enable Flask's development mode (auto-reloading)
+    command: python run.py  # Run the app using your run.py file
+
+
+  client:
+    build: ./client
+    container_name: client
+    ports:
+      - '5173:5173'  # Vite's default port
+      - '5174:5174'  # HMR (Hot Module Replacement) WebSocket port
+    environment:
+      - HOST=0.0.0.0
+    volumes:
+      - ./client:/app  # Sync the client directory with /app in the container
+      - /app/node_modules  # Prevent node_modules overwrite
+    working_dir: /app
+    command: npm run dev -- --host

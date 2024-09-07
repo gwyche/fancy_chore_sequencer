@@ -1,32 +1,21 @@
-# Use an official Node.js runtime as the base image
-FROM node:14
+# Use an official node image as the base
+FROM node:16-alpine
 
 # Set the working directory in the container
 WORKDIR /app
 
-# Copy package.json and package-lock.json to the working directory
-COPY package*.json ./ 
+# Copy package.json and package-lock.json to the container
+COPY package.json package-lock.json ./
 
-# Install project dependencies
-RUN npm install
+# Install dependencies (including devDependencies to get vite)
+RUN npm install --include=dev
 
-# Install Vite globally
-RUN npm install -g create-vite
-
-# Create a new Vite project
-RUN create-vite my-app --template react
-
-# Change the working directory to the newly created project
-WORKDIR /app/my-app
-
-# Install project dependencies for the Vite project
-RUN npm install
-
-# Copy the rest of the project files to the working directory
+# Copy the rest of the application code
 COPY . .
 
-# Expose a port (if needed)
-# EXPOSE <port>
+# Expose the Vite development port
+EXPOSE 5173
 
-# Define the command to run your application
-CMD [ "npm", "start" ]
+# Start the Vite application
+CMD ["npm", "run", "dev", "--", "--host"]
+
