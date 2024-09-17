@@ -1,0 +1,14 @@
+version: "3"
+services:
+  vite:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"  # Expose Vite's development server
+    volumes:
+      - .:/app  # Mount the entire project directory
+      - /app/node_modules  # Prevent node_modules from being overwritten
+    environment:
+      - CHOKIDAR_USEPOLLING=true  # Ensure Vite's file watcher works inside Docker
+    command: ["npm", "run", "dev"]  # Run Vite's development server
