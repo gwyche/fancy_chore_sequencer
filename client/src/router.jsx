@@ -1,9 +1,9 @@
 import { createBrowserRouter } from "react-router-dom"
-import { Login } from "./Components/Login/Login"
-import { ScheduleActions } from "./Components/Schedule/ScheduleActions"
+import { Login } from "./Components/Authentication/Login"
+import { ScheduleActions } from "./Components/DashboardAndSchedule/SchedulePages/ScheduleActions"
 import { Details } from "./Components/Details"
-import { CreateAccount } from "./Components/Login/CreateAccount"
-import { ScheduleCreate } from "./Components/Schedule/ScheduleCreate"
+import { CreateAccount } from "./Components/Authentication/CreateAccount"
+import { ScheduleCreate } from "./Components/DashboardAndSchedule/SchedulePages/ScheduleCreate"
 
 export const router = createBrowserRouter([
     { path: "/", element: <Login />},
