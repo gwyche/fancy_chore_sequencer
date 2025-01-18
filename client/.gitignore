@@ -1,7 +1,4 @@
-# Ignore Swagger 
-../swagger-ui/
-
-# Logs
+clear# Logs
 logs
 *.log
 npm-debug.log*
