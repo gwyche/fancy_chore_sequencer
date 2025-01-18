@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { useState } from "react"
 
 export function Login () {
     // Create credentials state
@@ -10,7 +11,23 @@ export function Login () {
     // Destructure login method and isAuthenticated state
 
     // Create a function to handle input changes
-    
+
+    // // Login method
+    // const login = async (credentials) => {
+    //     // Request credentials from the server
+    //     try {
+    //         const response = await axios.post("fancychores.com/credentials", {
+    //             username : credentials.username,
+    //             password : credentials.password
+    //         });
+    //         // If the response is successful, set the isAuthenticated state to true and navigate to the dashboard
+    //     } 
+        
+    //     catch (error) {
+    //         console.log("Something went wrong\n", error)    
+    //     } 
+    // }
+
     
 
 
