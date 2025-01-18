@@ -5,7 +5,7 @@ export function Login () {
 
     return (
         <>
-        <h1>hello!</h1>
+        <h1>Login</h1>
         <form>
             <input className="username" required placeholder="username"></input>
             <input className="password" required placeholder="password"></input>
