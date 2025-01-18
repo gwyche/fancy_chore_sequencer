@@ -19,10 +19,10 @@ export function CreateAccount() {
   }
 
   const handleCreate = async () => {
-    const { name, username, password } = userBody
+    const { username, password } = userBody
 
     try {
-      await axios.post("auth/signup", { name, username, password })
+      await axios.post("https://fancychores.com/account", { username, password })
       console.log("Post Successful")
     } catch (error) {
       console.log(error)
@@ -32,14 +32,6 @@ export function CreateAccount() {
   return (
     <>
       <form>
-        <input
-          className="name"
-          name="name"
-          onChange={handleChange}
-          value={userBody.name}
-          required
-          placeholder="Name"
-        ></input>
         <input
           className="username"
           name="username"
