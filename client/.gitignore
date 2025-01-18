@@ -1,5 +1,5 @@
-#Swagger ui
-swagger-ui/
+# Ignore Swagger 
+../swagger-ui/
 
 # Logs
 logs
