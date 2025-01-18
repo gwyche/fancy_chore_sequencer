@@ -1,0 +1,150 @@
+openapi: 3.0.3
+info:
+  title: Fancy Chore Planner - OpenAPI 3.0
+  description: |-
+    This is a mock running within a node.js server. This simple api will provide responses to backend api calls using a customizable yaml to support front-end development of the Fancy Chore application
+  contact:
+    email: n/a
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 1.0.1
+externalDocs:
+  description: Find out more about Swagger
+  url: http://swagger.io
+servers:
+  - url: https://fancychores.com
+tags:
+  - name: account
+    description: individals who are assigned chores
+  - name: credentials
+    description: login key/value pairs of individuals who are assigned chores
+  - name: chore
+    description: A task assigned to users
+  - name: team-info
+    description: details about the app team
+paths:
+  /credentials:
+    post:
+      tags:
+        - credentials
+      summary: login api that receives username and password
+      description: Creates list of users with given input array
+      operationId: login
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/credentials'
+      responses:
+        '200':
+          description: OK
+        '500':
+          description: Internal Server Error
+  /account:
+    post:
+      tags:
+        - account
+      summary: service to create a new user username and password
+      description: Creates a new user
+      operationId: createUser
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/account'
+      responses:
+        '200':
+          description: OK
+        '500':
+          description: Internal Server Error  
+  /user/login:
+    get:
+      tags:
+        - team-info
+      summary: service returns information about the application team
+      description: returns information about the application team
+      operationId: teamInfo
+      responses:
+        '200':
+          description: OK
+        '500':
+          description: Internal Server Error
+    put:
+      tags:
+        - user
+      summary: Update user
+      description: This can only be done by the logged in user.
+      operationId: updateUser
+      parameters:
+        - name: username
+          in: path
+          description: name that need to be deleted
+          required: true
+          schema:
+            type: string
+      requestBody:
+        description: Update an existent user in the store
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/User'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/User'
+      responses:
+        default:
+          description: successful operation
+components:
+  schemas:
+    credentials:
+      type: object
+      properties:
+        username:
+          type: string
+          example: johnsmith
+        password:
+          type: string
+          example: '123456789'
+    account:
+      type: object
+      properties: 
+        first_name:
+          type: string
+          example: John
+        last_name:
+          type: string
+          example: Smith
+        username:
+          type: username
+          example: username
+        password:
+          type: password
+          example: '123456789'
+    team_info:
+      type: object
+      properties:
+        schedule_name:
+          type: string
+          example: 'Team 1'
+        team_member:
+          type: team_member
+          example: johnsmith
+        chore_name:
+          type: chore
+          example: cook
+    chore:
+      type: string
+      properties:
+        enum:
+          - cook
+          - sweep
+          - walk dogs
+          - laundry
+          - read to kids
+          - mow lawn
+          - weed garden
+
