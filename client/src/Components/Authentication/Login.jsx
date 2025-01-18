@@ -1,6 +1,17 @@
 import { Link } from "react-router-dom"
 
 export function Login () {
+    // Create credentials state
+    const {credentials, setCredentials} = useState({
+        username : "",
+        passsword : ""
+    })
+
+    // Destructure login method and isAuthenticated state
+
+    // Create a function to handle input changes
+    
+    
 
 
     return (
