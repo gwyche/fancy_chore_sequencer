@@ -1,3 +1,6 @@
+#Swagger ui
+swagger-ui/
+
 # Logs
 logs
 *.log
