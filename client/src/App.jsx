@@ -11,4 +11,5 @@ function App() {
   )
 }
 
+App.use(cors());
 export default App

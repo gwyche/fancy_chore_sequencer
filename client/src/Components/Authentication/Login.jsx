@@ -40,7 +40,7 @@ export function Login () {
             <input className="password" required placeholder="password"></input>
             <button type="submit">Submit</button>
         </form>
-        <Link to="/CreateAccount">Create Account</Link>
+        <Link to="/LogIntoAccount">Log Into Account</Link>
         </>
         
     )
