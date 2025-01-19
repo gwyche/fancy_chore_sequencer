@@ -27,11 +27,11 @@ export const LoginLandingPage = () => {
           src="https://c.animaapp.com/AsaqrlLh/img/lucide-pencil-ruler.svg"
         />
       </div>
-
+     
       <LoginFormInput
         className="login-form-input-instance"
-        inputField="Email"
-        inputFieldHeader="Email"
+        inputField="Username"
+        inputFieldHeader="Username"
         state="default"
       />
       <LoginFormInput
@@ -48,6 +48,7 @@ export const LoginLandingPage = () => {
         text="Login"
         type="primary"
       />
+
       <div className="frame-2">
         <img
           className="line"

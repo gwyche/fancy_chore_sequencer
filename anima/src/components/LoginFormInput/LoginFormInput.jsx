@@ -7,8 +7,8 @@ import React from "react";
 import "./style.css";
 
 export const LoginFormInput = ({
-  inputField = "Email",
-  inputFieldHeader = "Email",
+  inputField = "Username",
+  inputFieldHeader = "Username",
   state,
   className,
 }) => {
