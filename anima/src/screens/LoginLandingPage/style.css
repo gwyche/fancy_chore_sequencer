@@ -1,0 +1,179 @@
+.login-landing-page {
+    background-color: #ffffff;
+    height: 812px;
+    position: relative;
+    width: 375px;
+  }
+  
+  .login-landing-page .status-bar-placeholder {
+    left: 0 !important;
+    position: absolute !important;
+    top: 0 !important;
+  }
+  
+  .login-landing-page .status-bar-instance {
+    background-image: url(https://c.animaapp.com/AsaqrlLh/img/-time-1.svg) !important;
+  }
+  
+  .login-landing-page .overlap-group {
+    height: 101px;
+    left: 48px;
+    position: absolute;
+    top: 105px;
+    width: 280px;
+  }
+  
+  .login-landing-page .fancy-chore {
+    color: transparent;
+    font-family: "Poppins", Helvetica;
+    font-size: 36px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 0;
+  }
+  
+  .login-landing-page .span {
+    color: #1e7d5b;
+    font-weight: 600;
+  }
+  
+  .login-landing-page .text-wrapper-2 {
+    color: #000000;
+    font-size: 32px;
+    font-weight: 500;
+  }
+  
+  .login-landing-page .lucide-pencil-ruler {
+    height: 24px;
+    left: 53px;
+    position: absolute;
+    top: 17px;
+    width: 24px;
+  }
+  
+  .login-landing-page .login-form-input-instance {
+    left: 13px !important;
+    position: absolute !important;
+    top: 249px !important;
+  }
+  
+  .login-landing-page .design-component-instance-node {
+    left: 14px !important;
+    position: absolute !important;
+    top: 328px !important;
+  }
+  
+  .login-landing-page .div {
+    color: var(--primary-green);
+    font-family: "Poppins", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 237px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-decoration: underline;
+    top: 406px;
+    white-space: nowrap;
+    width: 125px;
+  }
+  
+  .login-landing-page .buttons-instance {
+    background-color: #1d7c5a !important;
+    left: 14px !important;
+    position: absolute !important;
+    top: 455px !important;
+    width: 348px !important;
+  }
+  
+  .login-landing-page .frame-2 {
+    height: 18px;
+    left: 45px;
+    position: absolute;
+    top: 543px;
+    width: 284px;
+  }
+  
+  .login-landing-page .line {
+    height: 1px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 8px;
+    width: 122px;
+  }
+  
+  .login-landing-page .img {
+    height: 1px;
+    left: 162px;
+    object-fit: cover;
+    position: absolute;
+    top: 8px;
+    width: 122px;
+  }
+  
+  .login-landing-page .text-wrapper-3 {
+    color: var(--light-text);
+    font-family: "Poppins", Helvetica;
+    font-size: 12px;
+    font-weight: 500;
+    left: 138px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: -1px;
+  }
+  
+  .login-landing-page .frame-3 {
+    align-items: center;
+    border: 1px solid;
+    border-color: var(--astro-blue);
+    border-radius: 10px;
+    display: flex;
+    gap: 8px;
+    height: 56px;
+    justify-content: center;
+    left: 13px;
+    padding: 12px 8px;
+    position: absolute;
+    top: 577px;
+    width: 348px;
+  }
+  
+  .login-landing-page .img-2 {
+    height: 24px;
+    position: relative;
+    width: 24px;
+  }
+  
+  .login-landing-page .text-wrapper-4 {
+    color: var(--astro-blue);
+    font-family: "Poppins", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .login-landing-page .frame-4 {
+    align-items: center;
+    border: 1px solid;
+    border-color: var(--astro-blue);
+    border-radius: 10px;
+    display: flex;
+    gap: 8px;
+    height: 56px;
+    justify-content: center;
+    left: 13px;
+    padding: 12px 8px;
+    position: absolute;
+    top: 649px;
+    width: 348px;
+  }
+  

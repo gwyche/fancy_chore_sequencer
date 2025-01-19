@@ -1,0 +1,24 @@
+.status-bar {
+    height: 44px;
+    position: relative;
+    width: 375px;
+  }
+  
+  .status-bar .right-side {
+    height: 11px;
+    left: 294px;
+    position: absolute;
+    top: 17px;
+    width: 67px;
+  }
+  
+  .status-bar .left-side {
+    background-image: url(https://c.animaapp.com/AsaqrlLh/img/dark-mode-false--type-default.svg);
+    background-size: 100% 100%;
+    height: 21px;
+    left: 12px;
+    position: absolute;
+    top: 12px;
+    width: 54px;
+  }
+  

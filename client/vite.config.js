@@ -6,9 +6,9 @@ export default defineConfig({
   plugins: [react()],
   server: {
     host: true,  // Enable Vite to listen on all network interfaces
-    port: 5173,
+    port: 5180,
     hmr: {
-      clientPort: 5173,  // Ensure HMR works by pointing to the correct port
+      clientPort: 5180, // Ensure HMR works by pointing to the correct port
     },
     watch: {
       usePolling: true,  // Use polling for file changes in Docker

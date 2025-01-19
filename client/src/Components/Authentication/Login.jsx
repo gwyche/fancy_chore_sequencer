@@ -9,10 +9,17 @@ export function Login () {
         passsword : ""
     })
 
+    
     // Destructure login method and isAuthenticated state
 
     // Create a function to handle input changes
-
+    const handleChange = (e) =>{
+        // Destructure the name and value from the input field
+        const {name, value} = e.target
+        // Set the credentials state with the name and value
+        setCredentials({...credentials, [name] : value})
+    }
+    
     // // Login method
     // const login = async (credentials) => {
     //     // Request credentials from the server
@@ -29,6 +36,7 @@ export function Login () {
     //     } 
     // }
 
+    
     
 
 

@@ -1,0 +1,10 @@
+:root {
+    --astro-blue: rgba(24, 67, 90, 1);
+    --light-text: rgba(114, 114, 115, 1);
+    --matterhorn: rgba(85, 85, 85, 1);
+    --primary-green: rgba(30, 125, 91, 1);
+    --steel: rgba(119, 119, 119, 1);
+    --stroke: rgba(212, 218, 224, 1);
+    --white: rgba(255, 255, 255, 1);
+  }
+  
